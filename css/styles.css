@@ -94,7 +94,7 @@ a:active {
 
 #contact-form {
     border: 2px solid var(--border-grey);
-    border-radius: 5%;
+    border-radius: 5px;
     padding: 20px;
     display: flex;
     flex-direction: column;
