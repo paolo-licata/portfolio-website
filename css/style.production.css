@@ -59,6 +59,7 @@ h3 {
 
 a {
     color: #515e4a;
+    display: inline-block;
 }
 
 a:visited {
@@ -106,7 +107,16 @@ a:active {
 }
 
 #contact-form input {
-    width: 300px;
+    border: 2px solid #515e4a;
+    width: 250px;
+    border-radius: 10px;
+}
+
+#contact-form textarea {
+    border: 2px solid #515e4a;
+
+    width: 250px;
+    border-radius: 10px;
 }
 
 #form-button {
@@ -394,12 +404,20 @@ main {
     h2 {
         font-size: 18px;
     }
+
+    .profile__portrait {
+        float: left;
+        width: 120px;
+        height: auto;
+        margin-right: 40px;
+        border-radius: 50%;
+    }
 }
 
 
 @media all and (min-width: 500px) and (max-width: 750px) {
     .grid {
-        -ms-grid-columns: 1fr 10px 1fr;
+        -ms-grid-columns: 1fr 15px 1fr;
         grid-template-columns: 1fr 1fr;
     }
 
