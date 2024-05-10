@@ -54,15 +54,18 @@ h3 {
     font-weight: var(--defaultFontweight);
 }
 
-.profile {
-    border: 2px solid var(--border-grey);
-    padding-bottom: 120px;
-    border-radius: 2%;
-    box-shadow: 3px 2px 4px var(--shadow-color);
+.profile__portrait {
+    padding-top: 20px;
+    flex-shrink: 0.4;
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
 }
 
-.profile img {
-    translate: 10px 20px;
+.profile__text {
+    padding-top: 40px;
+    padding-right: 25px;
+    height: auto;
 }
 
 a {
@@ -318,6 +321,19 @@ main {
 
     h2 {
         font-size: 18px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile__portrait {
+        width: 120px;
+        height: auto;
+        border-radius: 50%;
     }
 }
 
