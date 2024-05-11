@@ -42,6 +42,10 @@ h2 {
     font-weight: 700;
 }
 
+.work__title {
+    text-align: center;
+}
+
 h3 {
     font-size: 24px;
     font-weight: 700;
@@ -246,11 +250,11 @@ a:active {
 .navigation-list li {
     display: inline;
     margin: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .navigation-list li:hover {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
 }
 
 .navigation-list a {
@@ -263,8 +267,8 @@ a:active {
 }
 
 .navigation-list a:hover {
-    text-decoration: underline;
-    font-size: 20px;
+    text-decoration: none;
+    font-size: 26px;
 }
 
 .grid {
@@ -278,6 +282,7 @@ a:active {
 .grid__item {
     display: inline-block;
     width: 33%;
+    padding: 10px;
     border: 1px solid #dee0e1;
     border-radius: 5px;
     -webkit-box-shadow: 0 2px 6px #757575;
@@ -290,7 +295,12 @@ a:active {
     transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
+.grid__item:last-child {
+    background-color: #d7deca;
+}
+
 .grid__item a {
+    font-size: 18px;
     color: #515e4a;
 }
 
