@@ -113,6 +113,11 @@ a:active {
     color: #5D0281;
 }
 
+.contacts {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
 .contacts a {
     color: #515e4a;
 }
@@ -125,9 +130,7 @@ a:active {
     border: 2px solid #dee0e1;
     border-radius: 5px;
     padding: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -138,15 +141,11 @@ a:active {
 }
 
 #contact-form input {
-    border: 2px solid #515e4a;
-    width: 250px;
-    border-radius: 10px;
+    width: 300px;
 }
 
 #contact-form textarea {
-    border: 2px solid #515e4a;
-    width: 250px;
-    border-radius: 10px;
+    width: 300px;
 }
 
 #form-button {
