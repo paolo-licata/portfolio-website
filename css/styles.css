@@ -26,7 +26,8 @@ body {
 }
 
 main {
-    margin: 20px;
+    text-align: center;
+    z-index: 1000;
 }
 
 
@@ -275,7 +276,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 
 /* long way of writing animation properties */
 
