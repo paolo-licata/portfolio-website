@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.production.css">
 </head>
 
@@ -47,12 +47,13 @@
     </header>
 
     <section>
-        <h2 class="work__title">Work</h2>
+        <h2 class="work__title">My Work</h2>
 
         <div class="grid">
 
             <div class="grid__item">
                 <h3>Meet App</h3>
+                <img class="project-img" src="./img/meet_app.png"/>
                 <p>
                     Within this project, I was responsible for the frontend and functionality of the App. It's written in React.js, following TDD and BDD approach throughout the entire project.
                 </p>
@@ -62,36 +63,59 @@
             </div>
 
             <div class="grid__item">
-                <h3>Native MacOS application</h3>
+                <h3>Not-a-Pokedex</h3>
+                <img class="project-img" src="./img/pokedex.png"/>
                 <p>
-                    Within this project I was responsible for the frontend. It is written in Java FX.
+                    This project is a simple app written using JavaScript. It emulates the good old pokedex showing various pokemons and their 
+                    characteristics fetching the data from an external API
                 </p>
-                <a href="#">See the project on GitHub</a>
+                <a href="https://github.com/paolo-licata/not-a-pokedex" target="_blank">See the project on GitHub</a>
+                or
+                <a href="https://paolo-licata.github.io/not-a-pokedex/" target="_blank">See website</a>
             </div>
 
             <div class="grid__item">
-                <h3>Node.js pdf generation</h3>
+                <h3>MyFlix Client</h3>
+                <img class="project-img" src="./img/myflix_client.png"/>
                 <p>
-                    Within this project I created a service that generates pdf out of webpages with the help of node.js
-                    server.
+                    This app is a client side based on an exiting <a href="https://github.com/paolo-licata/movie_api" target="_blank">REST API</a> 
+                    and database. The main objective was creating a single-page, 
+                    responsive app which will deliver good interaction and pleasant interface to the user.
                 </p>
-                <a href="#">See the project on GitHub</a>
+                <a href="https://github.com/paolo-licata/myFlix-client" target="_blank">See the project on GitHub</a>
+                or
+                <a href="https://myflix-cfoundry.netlify.app/signup" target="_blank">See website</a>
             </div>
 
             <div class="grid__item">
-                <h3>Styleguide for portfolio page</h3>
+                <h3>MyFlix Angular App</h3>
+                <img class="project-img" src="./img/angular_client.png"/>
                 <p>
-                    Here you can find a styleguide I've created for this portfolio page. It was created with the
-                    livingstyleguide gem and grunt.
+                    This is portfolio project showcasing my skills in building Angular application. 
+                    This project serves as a client for the same <a href="https://github.com/paolo-licata/movie_api" target="_blank">REST API</a> used for the MyFlix-Client and
+                    it's displaying movie data with a user-friendly interface using Angular Material.
                 </p>
-                <a href="#">See styleguide</a>
+                <a href="https://github.com/paolo-licata/myflix-angular-app" target="_blank">See the project on GitHub</a>
+                or
+                <a href="https://paolo-licata.github.io/myflix-angular-app/welcome" target="_blank">See website</a>
+            </div>
+
+            <div class="grid__item">
+                <h3>Chat App with React Native</h3>
+                <p>
+                    The app will provide users with a chat interface and options to share images and their location. It works on both iOS and Android devices and utilizes 
+                    Google Firestore/Firebase for storing messages and images. Guest authentication is handled via Google Firebase authentication.
+                </p>
+                <a href="https://github.com/paolo-licata/chat-app" target="_blank">See the project on GitHub</a>
+                or
+                <a href="/downloads/chat-app.webm" download>Video Demo</a>
             </div>
 
             <div class="grid__item">
                 <h3>Your project?</h3>
                 <p>
-                    I can help in realizing front-end and back-end projects with the following technologies: React.js,
-                    JavaScript, Java, JavaFX, HTML and CSS. I am also eager to learn new technologies if needed.
+                    I can help in realizing the front-end or back-end of your project with the following technologies: HTML, CSS, JavaScript, React.js, React Native,
+                    Angular and Node.js. Of course, I am also eager to learn new technologies if required.
                 </p>
                 <a href="./contact.html">Contact me</a>
             </div>
@@ -100,11 +124,14 @@
     </section>
 
     <footer class="page-footer">
-        <p>Find me on</p>
+        <p>Find me on:</p>
         <div class="social-media">
-            <img src="./img/github-logo.svg" alt="Github">
-            <img src="./img/twitter-logo.svg" alt="Twitter">
-            <img src="./img/linkedin-logo.svg" alt="LinkedIn">
+            <a href="https://github.com/paolo-licata" target="_blank">
+                <img src="./img/github-logo.svg" alt="Github">
+            </a>
+            <a href="https://www.linkedin.com/in/paolo-licata-0668b0304/" target="_blank">
+                <img src="./img/linkedin-logo.svg" alt="LinkedIn">
+            </a>
         </div>
     </footer>
 
