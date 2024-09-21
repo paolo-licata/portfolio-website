@@ -310,6 +310,11 @@ a:active {
     cursor: pointer;
 }
 
+.project-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 @supports (display: grid) {
     .grid {
         -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
