@@ -25,7 +25,7 @@ main {
 
 h1 {
     font-family: "Permanent Marker";
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     color: #fff;
     margin-left: 20px;
@@ -64,11 +64,11 @@ li {
 }
 
 .profile {
-    border: 2px solid #dee0e1;
+    border: 1px solid #f3f3f3;
     padding-bottom: 50px;
     border-radius: 12px;
-    -webkit-box-shadow: 3px 2px 4px #757575;
-    box-shadow: 3px 2px 4px #757575;
+    -webkit-box-shadow: 0 4px 8px #0000001a;
+    box-shadow: 0 4px 8px #0000001a;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -89,22 +89,22 @@ li {
 }
 
 a {
-    color: #515e4a;
+    color: #004197;
     display: inline-block;
 }
 
 a:visited {
-    color: #9D9F9F;
+    color: #304667;
 }
 
 a:hover {
-    color: #78ad33;
+    color: #1a5594;
     text-decoration: none;
     cursor: pointer;
 }
 
 a:focus {
-    color: #78ad33;
+    color: #348fbd;
     text-decoration: none;
     cursor: pointer;
 }
@@ -114,70 +114,49 @@ a:active {
 }
 
 .contacts {
-    font-size: 22px;
-    margin-bottom: 50px;
-}
-
-.contacts a {
-    color: #515e4a;
-}
-
-.contact a:hover {
-    color: #78ad33;
-}
-
-#contact-form {
-    border: 2px solid #dee0e1;
-    border-radius: 5px;
-    padding: 20px;
-    display: inline-block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    display: flex;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-#contact-form input {
-    width: 300px;
-}
-
-#contact-form textarea {
-    width: 300px;
-}
-
-#form-button {
-    width: 150px;
-    border: none;
-    font-size: 16px;
-    font-family: inherit;
-    background-color: #515e4a;
-    color: white;
-    padding: 8px;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
-    border: 1px solid #002A28;
-    border-bottom: 3px solid #002A28;
-    text-decoration: none;
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-property: opacity;
+    box-shadow: 0 4px 8px #0000001a;
+    max-width: 300px;
+    margin: 20px auto;
 }
 
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #0073b1;
+}
 
 #cv-button {
     border: none;
     font-size: 16px;
     font-family: inherit;
-    background-color: #515e4a;
+    background-color: #2a2a2aeb;
     color: white;
     padding: 8px;
     border-radius: 10px;
-    border: 1px solid #002A28;
+    border: 1px solid #2d2e2e;
     border-bottom: 3px solid #002A28;
     text-decoration: none;
     -webkit-transition-duration: 0.5s;
@@ -188,12 +167,10 @@ a:active {
     transition-property: opacity;
 }
 
-#form-button:hover,
-#form-button:focus,
 #cv-button:hover,
 #cv-button:focus {
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .page-footer {
@@ -214,7 +191,7 @@ a:active {
 }
 
 .page-header {
-    background-color: #515e4a;
+    background-color: #2a2a2aeb;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -284,8 +261,8 @@ a:active {
     padding: 10px;
     border: 1px solid #dee0e1;
     border-radius: 5px;
-    -webkit-box-shadow: 0 2px 6px #757575;
-    box-shadow: 0 2px 6px #757575;
+    -webkit-box-shadow: 0 4px 8px #00000033;
+    box-shadow: 0 4px 8px #00000033;
     text-align: center;
     -webkit-transition: -webkit-transform 0.2s ease;
     transition: -webkit-transform 0.2s ease;
@@ -295,18 +272,23 @@ a:active {
 }
 
 .grid__item:last-child {
-    background-color: #d7deca;
+    background-color: #5a5a5a;
+    color: #cdcccc;
+}
+
+.grid__item:last-child a {
+    color: #dfdfdf;
 }
 
 .grid__item a {
     font-size: 18px;
-    color: #515e4a;
+    color: #0c3a77;
 }
 
 .grid__item:hover {
-    -webkit-transform: scale(1.10);
-    -ms-transform: scale(1.10);
-    transform: scale(1.10);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
