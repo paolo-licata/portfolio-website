@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Case study - MyFlix</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/myflix-styles.css">
+</head>
+<body>
+	<div class="page-header">
+		<h1>Case study for My Flix full-stack project</h1>
+	</div>
+	<div class="content">
+
+		<div class="section">
+			<div class="section-paragraph">
+				<h2>Overview</h2>
+				<p>
+					myFlix is a web app, developed using the MERN stack, that provides users with access to information
+					about movies, directors, and genres. Users are able to create an account, update their personal data, 
+					and create a list of favorite movies
+				</p>
+				<h2>Purpose and Context</h2>
+				<p>
+					myFlix was a personal project I built as part of my web development course at CareerFoundry to demonstrate my mastery of full-stack JavaScript development.
+				</p>
+				<h2>Objective</h2>
+				<p>
+					The aim of the project was to have an ambitious full-stack project I can add to my professional portfolio. The problem I wanted to solve is to build 
+					the complete server-side and client-side for the application from scratch.
+				</p>
+			</div>
+
+			<div class="section-image">
+				<img src="img/casestudy-img/movieflix-home.png" alt="movieflicks-homepage">
+			</div>
+
+		</div>
+
+		<div class="section">
+			<div class="section-paragraph">
+				<h2>Approach</h2>
+				<h3>Back-end</h3>
+				<p>
+					For this project, I developed a RESTful API using Node.js and Express to interact with a MongoDB database. The API is designed to handle various HTTP methods like GET, POST, PUT, and DELETE, enabling clients to perform CRUD (Create, Read, Update, Delete)
+					 operations on a collection of movie information. The primary goal of the API is to serve and manage data about movies in JSON format.
+				</p>
+				<h4>Technology stack:</h4>
+					<ul>
+						<li><strong>Node.js: </strong>Asynchronous, event-driven JavaScript runtime that handles multiple requests efficiently.</li>
+						<li><strong>Express: </strong>Minimalist web framework for Node.js, which simplifies routing and middleware configuration.</li>
+						<li><strong>MongoDB: </strong>A NoSQL, non-relational database that stores data in flexible, document-based structures (JSON-like BSON format). Perfect for applications where data structure is not fixed or pre-defined.</li>
+					</ul>
+				<p>
+					To test the functionality of the API, I used Postman, a popular API testing tool that allows for interaction with the API endpoints in an isolated environment. With Postman,
+					I tested various API routes and scenarios to ensure the API handled requests and errors as expected.
+					Finally, I also tested the authentication flows with both Basic HTTP and JWT authentication to confirm that unauthorized users could not access restricted endpoints.
+				</p>
+			</div>
+			<div class="section-image">
+				<img src="img/casestudy-img/movieapi-code.png" alt="code-snippet">
+				<img src="img/casestudy-img/postman.png" alt="postman-image">
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="section-paragraph">
+				<h3>Front-end</h3>
+				<p>
+					After completing the backend API, I proceeded to build the user interface to allow users to interact with the API. 
+					This interface is a single-page application (SPA) developed using React and React-Redux, designed to handle user requests and display responses from the server-side efficiently. 
+					The goal was to create a dynamic, responsive, and user-friendly web application that communicates seamlessly with the backend API.
+				</p>
+				<h4>Technology stack:</h4>
+					<ul>
+						<li><strong>React: </strong>A powerful JavaScript library for building user interfaces, particularly well-suited for creating dynamic and interactive SPAs. React uses a component-based architecture, which allowed for better organization and reusability of UI elements.</li>
+						<li><strong>React-Redux: </strong>A state management library that works in conjunction with React to handle application-wide state efficiently, making it easier to manage and update UI components based on changes in the data.</li>
+						<li><strong>CSS: </strong>For styling the application, ensuring that the layout was both visually appealing and responsive across various devices and screen sizes.</li>
+					</ul>
+					<p>
+						The SPA is designed to allow users to search for, view, and manage movie information provided by the backend API.
+						The user can select a movie to watch, enter this movie to his favorite list or modify their user data.
+						By building this single-page application with React and React-Redux, I created a dynamic and responsive interface that seamlessly 
+						communicates with the backend API. The use of Redux for state management ensured smooth handling of data and user interactions across the application, 
+						while React’s component-based architecture made the UI modular and maintainable. The SPA provides an intuitive and user-friendly experience for 
+						interacting with movie data, and it showcases how front-end technologies can be combined to build scalable, efficient web applications.
+					</p>
+			</div>
+			<div class="section-image">
+				<img src="img/casestudy-img/login-signup.png" alt="login-and-signup">
+				<img src="img/casestudy-img/moviecard.png" alt="moviecard">
+			</div>
+		</div>
+
+		<div>
+			<h2>Challenges</h2>
+			<p>
+				This project was both the most rewarding and the most challenging I have undertaken so far. From designing the API 
+				and working with database structures to building a responsive client-side interface, I experienced a wide range of technical 
+				and conceptual learning curves. Ultimately, the project helped me grow as a developer, enhancing my skills in both backend and frontend development.
+				<br>
+				<br>
+				One of my favorite aspects of this project was building the backend. I enjoyed working with Node.js and Express to create a 
+				structured and efficient RESTful API. The flexibility of using MongoDB as a non-relational database allowed me to focus on 
+				creating a dynamic schema for movie information without being constrained by the rigid structure of relational databases.
+			</p>
+		</div>
+
+		<div>
+			<h2>Duration</h2>
+			<p>
+				Between the back-end and the front-end, I would say that this entire project took me around 20 days for completion.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
