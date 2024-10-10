@@ -1,0 +1,85 @@
+/* General styles */
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1.6;
+	background-color: #efefef;
+}
+
+.page-header {
+	background-color: #2a2a2aeb;
+}
+
+.content {
+	margin: 20px;
+}
+
+h1 {
+	color: white;
+	font-size: 2.2em;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+h2, h3 {
+	font-size: 1.8em;
+	margin-bottom: 5px;
+}
+
+p {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+/* Flexbox layout */
+.section {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 40px;
+	gap: 20px;
+}
+
+.section-paragraph {
+	flex: 2;
+}
+
+.section-image {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.section-image img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px #00000044; 
+  transition: transform 0.3s ease;
+}
+
+.section-image img:hover {
+	transform: scale(1.05);
+}
+
+/* Alternate the image side */
+.section:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.section {
+			flex-direction: column;
+			gap: 10px;
+	}
+
+	.section:nth-child(even) {
+			flex-direction: column;
+	}
+
+	.section-image img {
+			width: 100%;
+	}
+}
